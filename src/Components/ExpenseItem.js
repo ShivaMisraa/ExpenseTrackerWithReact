@@ -3,6 +3,7 @@ function ExpenseItem() {
     const expenseDate = new Date(2023,2,23);
     const expenseTitle="Food";
     const ExpenseAmmount= 10;
+    const LocationOfExpenditure= "Restaurant";
 
   return (
     <div className='expense-item'>
@@ -10,6 +11,7 @@ function ExpenseItem() {
         <div className='expense-item__description'>
             <h2>{expenseTitle}</h2>
             <div className='expense-item__price'>Rs {ExpenseAmmount}</div>
+            <div className='expense-item__price'>{LocationOfExpenditure}</div>
         </div>
     </div>
   );
