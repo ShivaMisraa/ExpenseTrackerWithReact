@@ -36,25 +36,25 @@ function App() {
        ammount={expenses[0].ammount} 
        date={expenses[0].date} 
        location={expenses[0].location}
-       ></ExpenseItem> 
+       />
       <ExpenseItem 
       title={expenses[1].title}
        ammount={expenses[1].ammount}
         date={expenses[1].date} 
         location={expenses[1].location}
-        ></ExpenseItem> 
+        /> 
       <ExpenseItem 
       title={expenses[2].title}
        ammount={expenses[2].ammount} 
        date={expenses[2].date}
        location={expenses[2].location} 
-       ></ExpenseItem> 
+       /> 
       <ExpenseItem 
       title={expenses[3].title}
        ammount={expenses[3].ammount} 
        date={expenses[3].date} 
        location={expenses[3].location}
-       ></ExpenseItem> 
+       />
             
     </div>
     
