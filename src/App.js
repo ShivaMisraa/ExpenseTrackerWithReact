@@ -2,13 +2,13 @@
 // import "./App.css";
 
 import React from "react";
-import Expenses from "./Components/Expenses";
+import Expenses from "./Components/Expenses/Expenses";
 // import './Components/ExpenseDate';
 // import './Components/ExpenseDetails';
-import "./Components/ExpenseItem";
+import "./Components/Expenses/ExpenseItem";
 // import './Components/Expenses';
 
-function App() {
+const App= ()  => {
   const expenses = [
     {
       id: "e1",
@@ -42,6 +42,17 @@ function App() {
       location: "City kart",
     },
   ];
+
+
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2',{},"Let's get started"),
+  //   React.cloneElement(expenses,{items:expenses})
+  // );
+
+
+
   return (
     <div>
       <h2>Let's get started</h2>
