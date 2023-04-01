@@ -1,15 +1,15 @@
 // import logo from "./logo.svg";
 // import "./App.css";
+// import './Components/ExpenseDate';
+// import './Components/ExpenseDetails';
+// import './Components/Expenses';
 
 import React from "react";
 import Expenses from "./Components/Expenses/Expenses";
-// import './Components/ExpenseDate';
-// import './Components/ExpenseDetails';
 import "./Components/Expenses/ExpenseItem";
-// import './Components/Expenses';
 import NewExpense from "./Components/NewExpense/NewExpense";
 
-const App= ()  => {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -44,6 +44,10 @@ const App= ()  => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log("In App.js");
+    console.log(expense);
+  };
 
   // return React.createElement(
   //   'div',
@@ -52,15 +56,13 @@ const App= ()  => {
   //   React.cloneElement(expenses,{items:expenses})
   // );
 
-
-
   return (
     <div>
-      <NewExpense/>
-      
-      <Expenses items={expenses}/>
+      <NewExpense onAddExpense={addExpenseHandler} />
+
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
